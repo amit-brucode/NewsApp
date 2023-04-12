@@ -68,4 +68,7 @@ dependencies {
     //glide dependency
     implementation 'com.github.bumptech.glide:glide:4.15.1'
 
+    def room_version = "2.2.3" // be sure to have the latest version of room
+    implementation "androidx.room:room-runtime:$room_version"
+
 }

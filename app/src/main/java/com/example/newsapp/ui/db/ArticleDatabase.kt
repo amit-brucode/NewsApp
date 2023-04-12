@@ -24,11 +24,10 @@ abstract class ArticleDatabase : RoomDatabase(){
                 instance = it
             }
         }
-
-        private fun createDatabase(context: Context) = Room.databaseBuilder(
-            context.applicationContext,
+        private fun createDatabase(context: Context) = Room.databaseBuilder(context.applicationContext,
             ArticleDatabase::class.java,
-            "article_db.db"
-        ).build()
+            "article_db.db").build()
     }
 }
+
+
